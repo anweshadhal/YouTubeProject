@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features="src/test/resources/Features/YouTubeSearch.feature",
 		glue= {"StepDefinitions"},
 		monochrome=true,
-		plugin= {"json:target/cucumber.json"},
+		plugin= {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
 		tags="@YouTubeMusicSearch"
 		
 		)
